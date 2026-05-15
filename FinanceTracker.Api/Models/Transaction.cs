@@ -8,6 +8,7 @@ namespace FinanceTracker.Api.Models
         [Key]
         public int Id { get; set; }
         [Required]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }
         [MaxLength(250)]
